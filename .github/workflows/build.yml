@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm install
-          npx @11ty/eleventy
+          npm run build-ghpages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
